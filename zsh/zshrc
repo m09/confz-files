@@ -1,4 +1,4 @@
-plugins=(git history mvn rsync tmux virtualenvwrapper jump)
+plugins=(git history mvn rsync virtualenvwrapper jump)
 source $ZSH/oh-my-zsh.sh
 setopt APPEND_HISTORY
 setopt INC_APPEND_HISTORY
