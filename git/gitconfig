@@ -26,9 +26,6 @@
 	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
 	ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
 
-[hub]
-	protocol = ssh
-
 [filter "gpg"]
 	clean = gpg --encrypt --recipient \"$(git config --global --get user.signingkey)\" --armor
 	smudge = gpg --decrypt 2>/dev/null
