@@ -29,3 +29,5 @@
 [filter "gpg"]
 	clean = gpg --encrypt --recipient \"$(git config --global --get user.signingkey)\" --armor
 	smudge = gpg --decrypt 2>/dev/null
+[init]
+	defaultBranch = main
